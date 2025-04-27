@@ -1,0 +1,25 @@
+.pricelist-container {
+    font-size: x-large;
+    color: var(--color-text-dark);
+    padding-bottom: 3rem;
+}
+.pricelist-container table {
+    margin-top: 3rem;
+    width: 100%;
+    font-size: x-large;
+}
+@media (min-width:1400px) {
+    .pricelist-container table {
+        width: 600px;
+    }
+}
+@media (max-width:1400px) {
+    .pricelist-container table {
+        width: 600px;
+    }
+}
+@media (max-width:1200px) {
+    .pricelist-container table {
+        width: 600px;
+    }
+}

@@ -1,0 +1,59 @@
+Tuntia:Minuuttia
+
+huor:min
+
+controller -> pitää sisällään valittua aikaa. 
+
+
+Timepicker -> päivittää controlleria
+Textfield -> sisältö päivittyy controllerin mukaan ja päivittää samalla controlleria.
+
+controller
+
+
+IF (!Timerisrunning) {
+      	setAloitusPvm(time:datetime.now());
+	Timerisrunning = True;
+}else{
+      	setLopetusPvm(time:datetime.now());
+	Timerisrunning = False;
+}
+
+
+
+
+
+Työleimaukset
+
+
+Jos luo aktiivisen leimauksen, onko aktiivinen leimaus käyttäjä kohtainen, niin ettei yksi käyttäjä voi luoda useampaa aktiivista  kirjausta kerralla 
+-> todennäköisesti
+-> eihän tämä estä samalla uusien kirjausten tekemistä manuaalisesti?
+-> ei jos rajoitteet tapahtuvat sql pyyntöjä tehdessä...
+-> SELECT COUNT(*) FROM WorkEntries WHERE userId = ? AND isActive = TRUE;
+
+
+
+Lista :
+Tarvitaan esittää listan sisältöä. 
+
+Tarvitaan hakea laitan sisältöä,
+-> SELECT * FROM WorkEntries WHERE id = ?;
+
+Tarvitaan muokata listan sisältöä,
+-> UPDATE WorkEntries SET startDate = ? WHERE id = ?;
+Onnistuu... 
+
+Tarvitaan voida suodattaa taulukon alkioita halutuilla muuttujilla
+-> Suodata pvm, projektin tai tekijän mukaan esim.
+-> SELECT * FROM WorkEntries WHERE project = ? AND userId = ? AND date BETWEEN ? AND ?;
+
+
+
+Kannattaako järjestellä säännöllisesti taulukkoa tietokannassa
+-> Voisi hyödyntää esim. binäärihakua
+-> Paljon vie tehoa järjestää taulukko uudestaan aina tarpeen tullen jos lisää alkion?
+-> Onko se tarpeen tietokannassa?
+
+
+

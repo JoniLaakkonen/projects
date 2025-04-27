@@ -1,0 +1,54 @@
+User
+-id
+-lastName
+-firstName
+-username
+-email
+-password
+-workEntrys
+-company
+-userLevel
+-profilePicture
+
+Company
+-id
+-business-ID
+-companyName
+-address
+-Email
+-phoneNumber
+-subscription
+-companySize
+-Logo
+
+WorkEntry
+-id
+-Project
+-Date
+-startTime
+-endTime
+-comment
+
+Projekti
+-id
+-nimi
+-kuvaus
+-Projektinumero
+-aloitusPvm
+-lopetusPvm
+-status
+-ilmoitukset (ID:t)
+-Tasks
+-Key performance indicator
+-work entrys (kohteelle merkatut tunnit)
+-väri
+
+Notification
+-ID
+-linked project
+-linked user
+-linked team
+-description
+
+
+

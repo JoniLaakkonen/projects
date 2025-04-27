@@ -1,0 +1,25 @@
+main.homepage {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.flex-column {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+.flex-row {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.-ml-margin {
+    margin-left: -100px;
+}

@@ -1,0 +1,18 @@
+#3AAFA9	Turgoosi kirjautumissivu tausta
+
+#17252A	Kirjautumissivu nappula tumma
+
+#0xFFCDE1E7	Vaalea Pääväri
+
+#0xFF254E58	Tumma pääväri
+
+#948E8E	Placeholder teksti
+
+#F2EDED	Kirjautumissivu teksti
+
+#FAFDFD	Vaalea kuvake
+
+#1D1B20	(Teksti tumma?)
+
+
+1D1B20 musta teksti

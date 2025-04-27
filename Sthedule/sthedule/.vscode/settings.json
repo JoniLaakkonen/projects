@@ -1,0 +1,6 @@
+{
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "dart.enableSnippets": true,
+    "dart.showMainCodeLens": true,
+    "dart.devToolsTheme": "dark"
+}
