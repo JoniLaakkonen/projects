@@ -2,7 +2,6 @@ import React from "react";
 import Primaryheader from "../components/ui/header/primaryheader";
 import NavBar from "../components/ui/navigation/navbar";
 import Pitch from "../components/ui/pitch/pitch";
-import Servicesinfo from "../components/ui/servicesinfo/servicesinfo";
 import Servicecards from "../components/ui/servicecards/servicecards";
 import "./pages.css";
 import Salebox from "../components/ui/salebox/salebox";
@@ -10,7 +9,7 @@ import Footer from "../components/ui/footer/footer";
 import CallToAction from "../components/ui/calltoction/calltoaction";
 
 function Homepage() {
-  const promotionIsUp = "true";
+  const promotionIsUp = "false";
   return (
     <>
       <main className="homepage">
@@ -19,21 +18,21 @@ function Homepage() {
           headerImage={"etusivuheader.jpg"}
           imageAlt={"Spa aiheinen etusivun kuva."}
           headerText={"Lumoava Jasmin"}
-          promptText={"Terapeuttisia kasvo hoitoja & virkistäviä spa hetkiä"}
+          promptText={"Hemmottelua, hoitoa, hyvää oloa ja ennen kaikkea omaa aikaa, juuri sinulle."}
         />
-        {promotionIsUp && 
+        {promotionIsUp == "true" && 
           < Salebox saleheaeder={"Tähän joku uskomaton tarjous!"} salespitch={"Tähän joku tehokas myyntipuhe houkuttelemaan asiakkaita"} toSaleitem={"#"}/>
         }
-        <Servicecards serviceheader={"Tähän jotain lumoavaa palveluihin liittyen"}/>
+        <Servicecards serviceheader={"Palvelut"}/>
         <Pitch
-          header={'Tähän otsikko, joka saa asiakkaan valitsemaan juuri sinut'}
-          pitchtext={'Tähän teksti, joka saa asiakkaan valitsemaan juuri sinut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore unde consequatur, rem distinctio a fuga placeat laudantium impedit quidem sit odio cum suscipit, corrupti amet incidunt adipisci doloribus tempore!'}
-          image1={'desk-8380078_1280.jpg'}
-          image2={'spa-2422421_1280.jpg'}
+          header={'Toivon, että kokisit tulleesi hoidossa kohdatuksi ja sinulla on hymy huulilla poislähtiessä.'}
+          pitchtext={'Lumovan Jasminin käsissä voit turvallisesti hengähtää riippumatta siitä, minkä hoidon olet itsellesi valinnut. Tarvittaessa autan  löytämään sopivan hoidon ja sopivat tuotteet juuri sinulle, ilman kiirettä. <br />Kosmetologipalveluni ovat tarkoitettu kaikenikäisille. '}
+          image1={'tyopiste.jpg'}
+          image2={'IMG_0688.jpg'}
         />
-        <CallToAction image={"etusivuheader.jpg"} imagealt={"Kuvateksti"} promttext={"Tähän jouku teksti joka saa vielä harkitsemaan"} readmore={"#"} totimes={"#"}/>
+        <CallToAction image={"etusivuheader.jpg"} imagealt={"Kuvateksti"} promttext={"Tervetuloa palveltavaksi Lumoavan Jasminin käsiin."} readmore={"/hinnasto"} totimes={"/ajanvaraus"}/>
       </main>
-      <Footer fullname={"Jasmin Laakkonen"} bnumb={"Ytunnus"} mail={"jasse.sposti@com"} phon={"+358XX-XXX-XXXX"} postalxCity={"80100 Joensuu"} street={"Ahomansikka kaksykkönen"}/>
+      <Footer fullname={"Jasmin Laakkonen"} bnumb={"3524808-1"} mail={"lumoava.jasmin@gmail.com"} phon={"+358-45160-3363"} postalxCity={"80100 Joensuu"} street={"Jukolankatu 19"}/>
     </>
   );
 }

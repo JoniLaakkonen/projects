@@ -20,19 +20,10 @@ header{
 
 @media(max-width: 1000px) {
     header {
-        flex-flow: column;
     }
     .headerpicture {
-        position: relative;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        object-fit: contain;
-        color: #1A1F1A;
     }
     .headeroverlay {
-        height: auto;
     }
 }
 .headerbackground{
@@ -97,4 +88,5 @@ header{
 }
 .text-header-container h1{
     font-weight: 300;
+    text-align: center;
 }

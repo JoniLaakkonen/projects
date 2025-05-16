@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Dashboard from './admin/dashboard/Dashboard';
 import './App.css';
-import { Homepage, Pricepage } from './pages';
+import { Homepage, Pricepage, Servicepage } from './pages';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -30,6 +30,7 @@ function App() {
           />
         <Route path='/' element={<Homepage/>}/>
         <Route path='/hinnasto' element={<Pricepage/>}/>
+        <Route path='/tietoja' element={<Servicepage/>}/>
       </Routes>
     </>
   );

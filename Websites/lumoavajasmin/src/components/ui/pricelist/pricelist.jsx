@@ -5,13 +5,13 @@ function Pricelist({title, prices }) {
   return (
     <>
         <div id='pricelist' className='flex-column pricelist-container'>
-        <div class="fieldset-title">
-            <span class="legend">{title}</span>
+        <div className="fieldset-title">
+            <span className="legend">{title}</span>
         </div>
         <table>
             {prices.map((item) => {
             return (
-            <tr>
+            <tr key={item.id}>
                 <td>{item.servicename}</td>
                 <td className='align-end'>{item.price}</td>
             </tr>

@@ -9,9 +9,9 @@ function Footer({fullname, mail, phon, street, postalxCity, bnumb}) {
       <iframe
         id="mapTo"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d917.2286707541574!2d29.7980914!3d62.6267858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469b8654fc3f17d7%3A0x53c2243d9203446!2sHiushuone%20Sinna!5e0!3m2!1sfi!2sfi!4v1744987131116!5m2!1sfi!2sfi"
-        allowfullscreen=""
+        allowFullScreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
       <div className="footer-body flex-row">
         <div className="footer-contact flex-column">
@@ -41,12 +41,10 @@ function Footer({fullname, mail, phon, street, postalxCity, bnumb}) {
         <div className="footer-nav flex-column">
           <span id="footer-information">Navigoi:</span>
           <ul>
-            {navItems.map((item) => {
-              return (
+            {navItems.map((item) => { 
                 <li key={item.id} className="footerNav" id={item.itemId}>
                   <Link to={item.path}>{item.title}</Link>
                 </li>
-              );
             })}
             <li className="footerNav">
               <Link to={"/tietosuojaseloste"}>Tietosuojaseloste</Link>

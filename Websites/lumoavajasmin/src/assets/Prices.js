@@ -1,75 +1,135 @@
 export const Prices = {
-    "kategooria":[
+    "Ripset":[
         {
             id: 1,
-            servicename: "Jalkahoito",
-            path: "/palvelut/jalkahoito",
-            price: "123€",
+            servicename: "Ripsien värjäys",
+            price: "23,00€",
             showcase: "true"
         }, 
         {
             id: 2,
-            servicename: "Kasvohoito",
-            path: "/palvelut/kasvohoito",
-            price: "123€",
+            servicename: "Kulmien värjäys ja muotoilu",
+            price: "28,00€",
             showcase: "true"
         }, 
         {
             id: 3,
-            servicename: "Manikyyri",
-            path: "/palvelut/manikyyri",
-            price: "123€",
+            servicename: "Ripsien ja kulmien värjäys sekä kulmien muotoilu",
+            price: "38,00€",
             showcase: "true"
         }, 
         {
             id: 4,
-            servicename: "Hoito2",
-            path: "/palvelut/jalkahoito",
-            price: "123€",
+            servicename: "Klassinen ripsienpidennys",
+            price: "70,00€",
             showcase: "true"
         }, 
         {
             id: 5,
-            servicename: "Hoito3",
-            path: "/palvelut/jalkahoito",
-            price: "123€",
+            servicename: "Ripsihuolto klassisille pidennyksille",
+            price: "45,00€",
             showcase: "true"
         }
     ],
-    "kategooria2":[
+    "Hieronta":[
         {
             id: 1,
-            servicename: "Jalkahoito",
-            path: "/palvelut/jalkahoito",
-            price: "123€",
+            servicename: "Klassinen hieronta",
+            price: "45,00€",
+            showcase: "true"
+        }
+    ],
+    "Manikyyri ja jalkahoidot":[
+        {
+            id: 1,
+            servicename: "Manikyyri",
+            price: "50,00€",
             showcase: "true"
         }, 
         {
             id: 2,
-            servicename: "Kasvohoito",
-            path: "/palvelut/kasvohoito",
-            price: "123€",
+            servicename: "Kynsien hoito",
+            price: "25,00€",
             showcase: "true"
         }, 
         {
             id: 3,
-            servicename: "Manikyyri",
-            path: "/palvelut/manikyyri",
-            price: "123€",
+            servicename: "Jalkahoito",
+            price: "65,00€",
             showcase: "true"
         }, 
         {
             id: 4,
-            servicename: "Hoito2",
-            path: "/palvelut/jalkahoito",
-            price: "123€",
+            servicename: "Spa jalkahoito",
+            price: "85,00€",
             showcase: "true"
         }, 
         {
             id: 5,
-            servicename: "Hoito3",
-            path: "/palvelut/jalkahoito",
-            price: "123€",
+            servicename: "Kynsien leikkaus",
+            price: "30,00€",
+            showcase: "true"
+        }
+    ],
+    "Sokerointi (Hellävarainen ja tehokas karvanpoisto)":[
+        {
+            id: 1,
+            servicename: "Bikiniraja",
+            price: "30,00€",
+            showcase: "true"
+        }, 
+        {
+            id: 2,
+            servicename: "Sääret",
+            price: "40,00€",
+            showcase: "true"
+        }, 
+        {
+            id: 3,
+            servicename: "Kainalot",
+            price: "25,00€",
+            showcase: "true"
+        }, 
+        {
+            id: 4,
+            servicename: "Käsivarret",
+            price: "30,00€",
+            showcase: "true"
+        }, 
+        {
+            id: 5,
+            servicename: "Ylähuuli / Leuka / Poset (per. alue)",
+            price: "30,00€",
+            showcase: "true"
+        }, 
+        {
+            id: 6,
+            servicename: "Sokerointipaketti: Käsivarret + Kainalot",
+            price: "50,00€",
+            showcase: "true"
+        }, 
+        {
+            id: 5,
+            servicename: "Sokerointipaketti: Reidet + sääret sokerointi",
+            price: "65,00€",
+            showcase: "true"
+        }, 
+        {
+            id: 5,
+            servicename: "Sokerointipaketti: Kainalot + Sääret sokerointi",
+            price: "58,00€",
+            showcase: "true"
+        }, 
+        {
+            id: 5,
+            servicename: "Sokerointipaketti: Bikiniraja + Kainalot + Sääret",
+            price: "90,00€",
+            showcase: "true"
+        }, 
+        {
+            id: 5,
+            servicename: "Sokerointipaketti: Koko jalat, bikiniraja, käsivarret ja kainalot",
+            price: "140,00€",
             showcase: "true"
         }
     ]

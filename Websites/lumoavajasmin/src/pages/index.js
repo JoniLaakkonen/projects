@@ -1,4 +1,5 @@
 import Homepage from "./homepage"
 import Pricepage from "./pricepage"
+import Servicepage from "./servicepage"
 
-export { Homepage, Pricepage }
+export { Homepage, Pricepage, Servicepage }

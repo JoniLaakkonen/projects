@@ -10,7 +10,13 @@ function Pitch({header, pitchtext, image1, image1alt, image2, image2alt}) {
             <h3>{header}</h3>
             <div className='flex-row -ml-margin'>
                 <img className='pitch-image2' src={process.env.PUBLIC_URL + "/images/" + image2} alt={image2alt} />
-                <p>{pitchtext}</p>
+                <p>
+                {pitchtext.split('<br />').map((line, idx) => (
+                  <React.Fragment key={idx}>
+                    {line}<br />
+                  </React.Fragment>
+                ))}
+                </p>
             </div>
         </div>
     </div>

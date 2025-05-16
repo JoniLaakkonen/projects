@@ -22,21 +22,37 @@ nav {
         width: 1000px;
     }
 }
-@media (max-width:889px) {
+@media (max-width:899px) {
     .navbar-links {
         width: 600px;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width:698px) {
+    .fieldset-title {
+        font-size: large;
+        text-align: center;
     }
 }
 .navbar-links > h1.navbar-name {
     color: var(--color-nav-bg);
 }
-.navbar-links .logotext {
+.navbar-links .logotext,
+.sidebar .logotext {
     font-family: Tahoma, Verdana, sans-serif;
     font-weight: bolder;
     font-size: 28px;
     color: var(--color-dark);
     text-transform: uppercase;
 }
+
+.sidebar .logotext {
+    font-size: 18px;
+    padding: 1rem;
+}
+
+
 .nav-options {
     display: flex;
     position: relative; /* add this to help dropdowns position */
@@ -45,12 +61,12 @@ nav {
 }
 .nav-options > li {
     padding: 0 10px;
+    font-size: 18px;
 }
 .nav-item #navA {
     display: flex;
     align-items: center;
     font-weight: 400;
-    font-size: 18px;
     padding: 10px 20px;
     border-radius: 20px;
     color: var(--color-nav-textdark);
@@ -64,7 +80,6 @@ nav {
     display: flex;
     align-items: center;
     font-weight: 400;
-    font-size: 18px;
     margin-left: 2rem;
     padding: 10px 20px;
     border-radius: 20px;

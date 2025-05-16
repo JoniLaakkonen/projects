@@ -4,6 +4,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    text-align: center;
 }
 .cta-container img{
     width: 100%;
@@ -44,4 +45,14 @@
 }
 .cta-text a:active {
     color: var(--color-secondary);
+}
+
+@media (max-width:698px) {
+    .cta-text {
+        margin-top: -40vh;
+    }
+
+    .cta-text .flex-row a {
+        margin-right: 1rem;
+    }
 }

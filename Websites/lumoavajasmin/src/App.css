@@ -79,11 +79,17 @@ a:active {
     text-transform: uppercase;
     margin: 30px 0;
 }
-
 .legend {
     padding: 5px 10px;
     background-color: var(--color-bg); /* Optional: mimic legend background */
 }
 .align-end {
     text-align: end;
+}
+
+@media (max-width:698px) {
+    .fieldset-title {
+        font-size: large;
+        text-align: center;
+    }
 }
